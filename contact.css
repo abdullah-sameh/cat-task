@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;            
+}
+nav p {
+    all: initial;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+main div img { 
+    width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+    main div img {
+        width: 350px;
+    }
+}
+
+main form {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+}
+
+main form > div:not(.not-grid){
+    display: grid;
+} 
+main form > .not-grid {
+    display: flex;
+    justify-content: space-between;
+}
+main form > div > div {
+    display: flex;
+    gap: 30px;
+}
+
+main form > div > label {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main form div label + * {
+    font-size: 16px;
+}
+
+main form button {
+    all: initial;    
+    border: 1px solid #323232;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-family: 'Cairo', sans-serif;
+    justify-self: center;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+main form button:hover {
+    transform: scale(1.1);
+}
+
+main form button:hover > [icon] {
+    color: #046FDF;
+}
+
+main form button [type="submit"] {
+    all: initial;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer a [icon] {
+    font-size: 45px;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #323232;
+}
+
+/* for facebook icon */
+footer a:nth-child(1) [icon]:hover {
+    transform: scale(1.1);
+    color: #046FDF;
+}
+
+/* for github icon */
+footer a:nth-child(2) [icon]:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background: #323232;
+    border-radius: 50%;
+}
+
+/* for linkedin icon */
+footer a:nth-child(3) [icon]:hover {
+    transform: scale(1.1);
+    color: #0073AF;
+}
+
+/* for youtube icon */
+footer a:nth-child(4) [icon]:hover {
+    transform: scale(1.1);
+    color: #FF0000;
+}

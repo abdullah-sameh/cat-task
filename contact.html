@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for icons -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <!-- for font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <title>CONTACT</title>
+</head>
+<body>
+    <header>
+        <div class="logo" style="text-transform: uppercase; font-size: 18px;">cat</div>
+        <!-- navigation bar -->
+        <nav>
+            <p>home</p>
+            <p>gallery</p>
+            <p>contact</p>
+            <p>members information</p>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <img src="./contact.jpg" alt="">
+        </div> 
+        <form id="userForm">
+            <div>
+                <label for="name">first name</label>
+                <input type="text" pattern="[A-Za-z]+" title="must be in english" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="name">last name</label>
+                <input type="text" pattern="[A-Za-z]+" title="must be in english" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email">your email</label>
+                <input type="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div>
+                <label for="gender">your gender</label>
+                <div>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+            <div class="not-grid">
+                <label for="age">your age</label>
+                <input type="number" required>
+            </div>
+            <div>
+                <label for="msg">message</label>
+                <textarea 
+                        name="msg"
+                        form="userForm"
+                        cols="50"
+                        rows="4"
+                        placeholder="Tell us about your feedback"
+                        required></textarea>
+            </div>
+            <button>
+                <input type="submit" value="">send
+                <iconify-icon inline icon="fluent:send-20-filled"></iconify-icon>
+            </button>
+        </form>
+    </main>
+    <footer>
+        <a href="#"><iconify-icon icon="akar-icons:facebook-fill"></iconify-icon></a>
+        <a href="#"><iconify-icon icon="foundation:social-github"></iconify-icon></a>
+        <a href="#"><iconify-icon icon="foundation:social-linkedin"></iconify-icon></a>
+        <a href="#"><iconify-icon icon="akar-icons:youtube-fill"></iconify-icon></a>
+    </footer>
+</body>
+</html>
